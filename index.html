@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- https://bai-tap-if-else.vercel.app/ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập if else</title>
+
+    <!-- Boot Strap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main class="container mt-5 calculator">
+        <div class="row bgimg">
+            <div class="col-2 left__side">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="baitap_1" data-toggle="pill" href="#pill_1" role="tab" aria-controls="pill_1" aria-selected="true">Bài 1</a>
+                <a class="nav-link" id="baitap_2" data-toggle="pill" href="#pill_2" role="tab" aria-controls="pill_2" aria-selected="false">Bài 2</a>
+                <a class="nav-link" id="baitap_3" data-toggle="pill" href="#pill_3" role="tab" aria-controls="pill_3" aria-selected="false">Bài 3</a>
+                <a class="nav-link" id="baitap_4" data-toggle="pill" href="#pill_4" role="tab" aria-controls="pill_4" aria-selected="false">Bài 4</a>
+                <a class="nav-link" id="baitap_5" data-toggle="pill" href="#pill_5" role="tab" aria-controls="pill_5" aria-selected="false">Bài 5</a>
+                <a class="nav-link" id="baitap_6" data-toggle="pill" href="#pill_6" role="tab" aria-controls="pill_6" aria-selected="false">Bài 6</a>
+                <a class="nav-link" id="baitap_7" data-toggle="pill" href="#pill_7" role="tab" aria-controls="pill_7" aria-selected="false">Bài 7</a>
+                <a class="nav-link" id="baitap_8" data-toggle="pill" href="#pill_8" role="tab" aria-controls="pill_8" aria-selected="false">Bài 8</a>
+
+              </div>
+            </div>
+            <div class="col-10 right__side">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="pill_1" role="tabpanel" aria-labelledby="baitap_1">
+                    <h2>📚 Xuất 3 số theo thứ tự tăng dần</h2>
+                    <div class="hint">
+                        <p><b>💡Gợi ý:</b> Với bài tập này chúng ta có nhiều cách giải. Bên dưới là một số gợi ý đơn giản cho bài này</p>
+                        <details>
+                            <summary>Cách 1: Sử dụng các lệnh if else lồng nhau (mở rộng để xem thêm)</summary>
+                            <p>
+                                <img class="w-25" src="https://cdn.jsdelivr.net/gh/khloe1425/BaiTapIfElse@master/img/carbon.png" alt="tutorial">
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Cách 2: Sử dụng các lệnh if else if else... (mở rộng để xem thêm)</summary>
+                            <p>
+                                <img class="w-50" src="https://cdn.jsdelivr.net/gh/khloe1425/BaiTapIfElse@master/img/carbon%20(1).png" alt="tutorial">
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Flowchart điều kiện (mở rộng để xem thêm)</summary>
+                            <p>
+                                <a href="https://drive.google.com/file/d/16vYGMr_Ue9HCOtfjstpaS4VLYyrcGoqd/view?usp=sharing" target="_blank">Bai1-ifelse.drawio</a>
+                            </p>
+                        </details>
+                    </div>
+                    <form action="#">
+                        <input type="number" id="n1_Ascending" placeholder="Nhập số thứ 1">
+                        <input type="number" id="n2_Ascending" placeholder="Nhập số thứ 2">
+                        <input type="number" id="n3_Ascending" placeholder="Nhập số thứ 3">
+                        <br>
+                        <button class="btn btn-primary" type="button" id="btnAscending">Sắp xếp</button>
+                        <div class="alert alert-success" role="alert">
+                            👉<span id="txtAscending"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pill_2" role="tabpanel" aria-labelledby="baitap_2">
+                    <h2>👋 Chương trình "Chào hỏi"</h2>
+                    <div class="hint">
+                        <b>💡Gợi ý:</b>
+                        <p>Nên tạo một dropdown để người dùng chọn thành viên cần gửi lời chào. Cách này sẽ hạn chế người dùng nhập sai nội dung.<br>
+                            Mỗi thẻ option nên thêm value để dễ xử lý data sau khi lấy từ form.<br>
+                            Nên sử dụng câu điều kiện <i>if...else if... else</i> . Hoặc dùng <i>switch case</i></p>
+                        <details>
+                            <summary>Dropdown HTML (mở rộng để xem thêm)</summary>
+                            <p>
+                                <img class="w-50" src="https://cdn.jsdelivr.net/gh/khloe1425/BaiTapIfElse@master/img/carbon%20(2).png" alt="tutorial">
+                            </p>
+                        </details>
+                    </div>
+                    <form action="#">
+                        <select name="form-control form-input" id="selUser">
+                            <option>Chọn thành viên</option>
+                            <option value="B">Bố</option>
+                            <option value="M">Mẹ</option>
+                            <option value="A">Anh Trai</option>
+                            <option value="E">Em Gái</option>
+                        </select>
+                        <button class="btn btn-primary" type="button" id="btnSayHi">Gửi lời chào</button>
+                        <div class="alert alert-success" role="alert">
+                            👉<span id="txtSayHi"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pill_3" role="tabpanel" aria-labelledby="baitap_3">
+                    <h2>🧮 Đếm số chẵn lẻ</h2>
+                    <div class="hint">
+                        <p>
+                            <b>💡Gợi ý:</b><br>
+                            Để kiểm tra 1 số là chẵn hay lẻ thì ta đem số đó chia với 2. Nếu chia hết thì là số chẵn, ngược lại là số lẻ. (dùng toán tử %)<br>
+                            Tạo biến để chứa giá trị khi đếm. Sau khi xác định được số đó chẵn hoặc lẻ thì tăng biến này lên 1 đơn vị (dùng các toán tử tăng:<i> count++, count+=1 </i>)<br>
+                            <b>🤔TIP:</b> Chỉ cần đếm các số chẵn. Để xác định số lượng số lẻ ta chỉ cần lấy 3 trừ đi số lượng số chẵn đếm được (do chỉ nhập 3 số nguyên)
+                        </p>
+                    </div>
+                    <form action="#">
+                        <input type="number" id="n1_countOddEven" placeholder="Nhập số thứ 1">
+                        <input type="number" id="n2_countOddEven" placeholder="Nhập số thứ 2">
+                        <input type="number" id="n3_countOddEven" placeholder="Nhập số thứ 3">
+                        <br>
+                        <button class="btn btn-primary" type="button" id="btnCountOddEven">Đếm</button>
+                        <div class="alert alert-success" role="alert">
+                            👉<span id="txtCountOddEven"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pill_4" role="tabpanel" aria-labelledby="baitap_4">
+                    <h2>🔮 Đoán hình tam giác</h2>
+                    <div class="hint">
+                        <p><strong>📝Note: Chỉ cần xác định các loại tam giác cơ bản (vuông, đều, cân), các tam giác còn lại xếp loại là tam giác khác</strong></p>
+                        <b>💡Gợi ý:</b>
+                        <details>
+                            <summary>Cách xác định loại tam giác (mở rộng để xem thêm)</summary>
+                            <p>
+                                <ul>
+                                    <li>Đều: Nếu 3 cạnh bằng nhau. Vd:a = 3, b=3 c=3</li>
+                                    <li>Cân: Nếu 2 cạnh bằng nhau. Vd: a=2, b=2, c=1</li>
+                                    <li>Vuông: c^2 = a^2 + b^2. Vd: a=3, b=4, c=5</li>
+                                </ul>
+                            </p>
+                        </details>
+                    </div>
+                    <form action="#">
+                        <input type="number" id="edge1" placeholder="Nhập độ dài cạnh 1">
+                        <input type="number" id="edge2" placeholder="Nhập độ dài cạnh 2">
+                        <input type="number" id="edge3" placeholder="Nhập độ dài cạnh 3">
+                        <br>
+                        <button class="btn btn-primary" type="button" id="btnTriangleType">Dự đoán</button>
+                        <div class="alert alert-success" role="alert">
+                            👉<span id="txtTriangleType"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pill_5" role="tabpanel" aria-labelledby="baitap_5">
+                    <h2>📅 Tính ngày tháng năm</h2>
+                    <div class="hint">
+                        <strong>📝Note: Bài tập này không bắt buộc làm nên không làm hoặc bị lỗi sẽ không bị trừ điểm.</strong>
+                        <p>Giả sử người dùng nhấp đúng không cần kiểm tra hợp lệ</p>
+                        <b>💡Gợi ý:</b>
+                        <details>
+                            <summary>Mở rộng để xem thêm</summary>
+                            <p>
+                                <ul>
+                                    <li>Form nhập thông tin có thể tạo bằng input loại number, dropwdown hoặc input loại date đều được</li>
+                                    <li>Tháng 2 không cần xác định năm nhuận, lấy mặc định là 28 ngày</li>
+                                    <li>Khi người dùng chọn xem Ngày Mai thì chỉ cần tăng giá trị ngày lên 1. Ngược lại, xem Ngày Hôm Qua thì trừ đi 1.</li>
+                                    <li>Những ngày đầu hoặc cuối tháng phải xử lý riêng. Ngày đầu tháng thì xem Ngày Hôm Qua phải là ngày cuối của tháng trước đó. Ngày cuối tháng thì xem Ngày Mai phải là ngày đầu của tháng kế tiếp. Tương tự với ngày đầu năm và cuối năm</li>
+                                </ul>
+                            </p>
+                        </details>
+                    </div>
+                    <form action="#">
+                        <input type="number" id="n_day" placeholder="Nhập Ngày">
+                        <input type="number" id="n_month" placeholder="Nhập Tháng">
+                        <input type="number" id="n_year" placeholder="Nhập Năm">
+                        <br>
+                        <button onClick=""  class="btn btn-primary" type="button" id="btnPass">Ngày Hôm qua</button>
+                        <button onClick=""  class="btn btn-primary" type="button" id="btnFuture">Ngày Mai</button>
+                        <div class="alert alert-success" role="alert">
+                            👉<span id="txtDateTime"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pill_6" role="tabpanel" aria-labelledby="baitap_6">
+                    <h2>🗓️ Tính ngày</h2>
+                    <div class="hint">
+                        <strong>📝Note: Bài tập này không bắt buộc làm nên không làm hoặc bị lỗi sẽ không bị trừ điểm.</strong>
+                        <p>Giả sử người dùng nhập đúng nên không cần kiểm tra hợp lệ</p>
+                        <b>💡Gợi ý:</b>
+                        <details>
+                            <summary>Mở rộng để xem thêm</summary>
+                            <p>
+                                <ul>
+                                    <li>Form nhập thông tin có thể tạo bằng input loại number, dropwdown hoặc input loại date đều được</li>
+                                    <li>Đối với tháng 2, nếu là năm nhuận sẽ có 29 ngày. Cách kiểm tra năm nhuận:
+                                        <ul>
+                                            <li>Năm chia hết cho 4 nhưng không chia hết cho 100. Vd:2012, 2016, 2020</li>
+                                            <li>Hoặc năm chia hết cho 400. Vd:1600, 1200</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                        </details>
+                    </div>
+                    <form action="#">
+                        <input type="number" id="monthInput" placeholder="Nhập Tháng">
+                        <input type="number" id="yearInput" placeholder="Nhập Năm">
+                        <button onClick=""  class="btn btn-primary" type="button" id="btnDate">Tính Ngày</button>
+                        <div class="alert alert-success" role="alert">
+                            👉<span id="txtDate"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pill_7" role="tabpanel" aria-labelledby="baitap_7">
+                    <h2>🔢 Đọc số</h2>
+                    <div class="hint">
+                        <strong>📝Note: Bài tập này không bắt buộc làm nên không làm hoặc bị lỗi sẽ không bị trừ điểm.</strong>
+                        <p>Giả sử người dùng nhập đúng nên không cần kiểm tra hợp lệ</p>
+                        <b>💡Gợi ý:</b>
+                        <details>
+                            <summary>Mở rộng để xem thêm</summary>
+                            <p>
+                                <ul>
+                                    <li>Sử dụng cách lấy số hàng trăm, hàng chục, hàng đơn vị</li>
+                                    <li>Sử dụng <i>if...else if...else</i> hoặc <i>switch case</i> để xử lý cách đọc số. Vd: 3 => ba, 2 => hai ...</li>
+                                </ul>
+                            </p>
+                        </details>
+                    </div>
+                    <form action="#">
+                        <input type="number" id="readNum" placeholder="Nhập số 3 chữ số">
+                        <button onClick=""  class="btn btn-primary" type="button" id="btnReadNum">Đọc số</button>
+                        <div class="alert alert-success" role="alert">
+                            👉<span id="txtReadNum"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pill_8" role="tabpanel" aria-labelledby="baitap_8">
+                    <h2>🗺️ Tìm sinh viên xa trường nhất</h2>
+                    <div class="hint">
+                        <strong>📝Note: Bài tập này không bắt buộc làm nên không làm hoặc bị lỗi sẽ không bị trừ điểm.</strong>
+                        <p>Giả sử người dùng nhập đúng nên không cần kiểm tra hợp lệ. Và các sinh viên ở các địa điểm khác nhau không ở chung.<br>
+                            Chỉ cần tính quãng đường theo tọa độ 2 đầu của 1 đoạn thẳng trên mặt phẳng</p>
+                        <b>💡Gợi ý:</b>
+                        <details>
+                            <summary>Mở rộng để xem thêm</summary>
+                            <p>
+                                <ul>
+                                    <li>Áp dụng cách tính đoạn thẳng theo tọa độ
+                                        <ul>
+                                            <li>d là độ dài đoạn thẳng. (x1, y1) là tọa độ điểm đầu của đoạn thẳng. (x2, y2) là tọa độ điểm thứ 2 của đoạn thẳng</li>
+                                            <li><img src="https://cdn.jsdelivr.net/gh/khloe1425/BaiTapIfElse@master/img/e82b29b690b69383a7c8512ef0223a0e353ec94c.svg" alt="tutorial"></li>
+                                        </ul>
+                                    </li>
+                                    <li>Sử dụng if...else if...else để so sánh độ dài các đoạn đường. Sau khi xác định được đoạn đường dài nhất thì thông báo tên sinh viên</li>
+                                </ul>
+                            </p>
+                        </details>
+                    </div>
+                    <form action="#">
+                        <h4>Sinh viên 1</h4>
+                        <input type="text" id="sv1" placeholder="Nhập tên">
+                        <input type="number" id="x1" placeholder="Nhập tọa độ x">
+                        <input type="number" id="y1" placeholder="Nhập tọa độ y">
+                        <h4 class="mt-3">Sinh viên 2</h4>
+                        <input type="text" id="sv2" placeholder="Nhập tên">
+                        <input type="number" id="x2" placeholder="Nhập tọa độ x">
+                        <input type="number" id="y2" placeholder="Nhập tọa độ y">
+                        <h4 class="mt-3">Sinh viên 3</h4>
+                        <input type="text" id="sv3" placeholder="Nhập tên">
+                        <input type="number" id="x3" placeholder="Nhập tọa độ x">
+                        <input type="number" id="y3" placeholder="Nhập tọa độ y">
+                        <h4 class="mt-3">Trường học</h4>
+                        <input type="number" id="x" placeholder="Nhập tọa độ x">
+                        <input type="number" id="y" placeholder="Nhập tọa độ y">
+                        <br>
+                        <button onClick="findStudentLocation()"  class="btn btn-primary" type="button" id="btnFindStuLocate">Tìm</button>
+                        <div class="alert alert-success" role="alert">
+                            👉<span id="txtFindStuLocate"></span>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+</body>
+
+    <!-- Boot Strap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Main Js -->
+    <script src="./js/main.js"></script>
+</html>
